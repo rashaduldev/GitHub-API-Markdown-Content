@@ -1,0 +1,14 @@
+{
+  "colors": {
+    "primary": "#16a34a",
+    "secondary": "#22d3ee",
+    "text": "#111827",
+    "background": "#f9fafb"
+  },
+  "fontSizes": {
+    "sm": "0.875rem",
+    "md": "1rem",
+    "lg": "1.125rem",
+    "xl": "1.25rem"
+  }
+}
