@@ -1,16 +1,14 @@
-import { fetchMarkdown } from "@/lib/github";
-import ReactMarkdown from "react-markdown";
-import rehypeSanitize from "rehype-sanitize";
+# Hello
 
-export default async function Home() {
-  const content = await fetchMarkdown("content/hello.md");
+Welcome to my project!  
 
-  return (
-    <div className="prose mx-auto p-4">
-      <h1 className="text-2xl font-bold">GitHub Markdown Content</h1>
-      <ReactMarkdown rehypePlugins={[rehypeSanitize]}>
-        {content}
-      </ReactMarkdown>
-    </div>
-  );
-}
+This is a simple Markdown file that can include:
+
+- Headings
+- Lists
+- **Bold text** or *italic text*
+- Links like [OpenAI](https://openai.com)
+- Code snippets
+
+```javascript
+console.log("Hello, world!");
