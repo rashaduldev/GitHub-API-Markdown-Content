@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitHub API Markdown Content
 
-## Getting Started
+## Overview
+**GitHub API Markdown Content** is a web application that allows users to **create, edit, and manage Markdown content directly on GitHub repositories** using the GitHub API. The project focuses on providing a smooth user experience for content management while handling complex state management, folder structures, and publishing workflows.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Create GitHub Folder:** Dynamically create folders in your GitHub repository.
+- **Markdown File Creation:** Generate new Markdown files (`.md`) with custom content.
+- **Edit & Update:** Edit existing Markdown files and update content in real-time.
+- **Publish to GitHub:** Push newly created or updated files directly to your repository.
+- **State Management:** Efficiently manage UI and API state using React/Redux Toolkit or Context API.
+- **Error Handling:** Comprehensive error handling for API failures or conflicts.
+- **User Authentication:** OAuth integration with GitHub to securely access repositories.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Challenges Solved
 
-## Learn More
+1. **State Management:**  
+   Managing the state of multiple Markdown files, folders, and API responses while keeping the UI responsive and consistent.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Folder & File Management via API:**  
+   GitHub API requires careful handling of paths, commits, and SHA hashes when creating or updating files.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Content Updates & Conflict Resolution:**  
+   Handling edits without overwriting existing changes and resolving potential merge conflicts programmatically.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Dynamic Publishing:**  
+   Automating file creation and updates directly to GitHub repositories without using the web interface.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend Framework:** [React](https://reactjs.org/) / [Next.js](https://nextjs.org/)
+- **State Management:** [Redux Toolkit](https://redux-toolkit.js.org/) or React Context API
+- **API:** [GitHub REST API](https://docs.github.com/en/rest)
+- **Styling:** TailwindCSS / CSS Modules
+- **Authentication:** GitHub OAuth
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/github-api-markdown-content.git
+   cd github-api-markdown-content
