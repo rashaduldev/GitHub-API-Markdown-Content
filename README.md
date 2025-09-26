@@ -47,5 +47,8 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/github-api-markdown-content.git
-   cd github-api-markdown-content
+   git clone https://github.com/rashaduldev/GitHub-API-Markdown-Content
+   cd GitHub-API-Markdown-Content
+
+   npm i
+   npm run dev
